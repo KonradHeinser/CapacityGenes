@@ -21,9 +21,11 @@
   <description>
 Expanded Biotech Style Genes(EBSG) is the step beyond [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2985153870]More Biotech Style Genes[/url]. Where that series sought to expand ranges that already exist, this series seeks to add ranges that should exist. You get gene ranges that alter sleep fall rate, but why not a range for changing the rate it recovers? If you can have fire resistance genes, why not have genes to resist other types of damage like frostbite and acid?
 
-This mod seeks to add some genes related to to capacity limits, like hearing and vision. This mod adds genes that multiply the capacity by a certain amount. While Mute and Eloquent Speaker both only impact talking, sight and hearing genes impact the other one based on the degree of gene. For example, having mostly blind will multiply Sight by 0.25, and multiply hearing by 1.15. Combine that with Excellent Hearing(Sight * 0.9), and you've essentially made bat people with 230% hearing and 23% sight! Which brings me to the fun fact of the day, there are no species of bats that are completely blind. In fact, some have been found to have better vision than humans!
+This mod seeks to add some genes related to to capacity limits, like hearing and vision. This mod adds genes that multiply the capacity by a certain amount. While Mute and Eloquent Speaker both only impact talking, sight and hearing genes impact the other one based on the degree of gene. 
 
-Below I have listed the currently added capacities, and what each gene level limits it to. The bonus/penalty for other senses is 5% * gene level(i.e. the +3 sight gene multiplies hearing by 115%, while the -3 is 85% hearing). The ones with fewer genes just have a lower impact on gameplay, and if the game is updated to make them have more impact, this mod will be updated to have more variations of that capacity.
+For example, having Terrible Vision will multiply Sight by 0.25, and multiply hearing by 1.15. Combine that with Strong Hearing(Hearing * 2, Sight * 0.9), and you've essentially made bat people with 230% hearing and 23% sight! Which brings me to the fun fact of the day, there are no species of bats that are completely blind. In fact, some have been found to have better vision than humans!
+
+Below I have listed the currently added capacities and the multipliers they have. The bonus/penalty for other senses is 5% * gene level(i.e. the +3 sight gene(Terrible Vision) multiplies hearing by 115%, while the -3 is 85% hearing). The ones with fewer genes just have a lower impact on gameplay, and if the game is updated to make them have more impact, this mod will be updated to have more variations of that capacity.
 
 Capacity limits - +1, +2, +3, +4
 Talking - 0%
@@ -45,7 +47,7 @@ This mod will eventually be put into Expanded Biotech Style Genes - All in One. 
 [url=https://github.com/KonradHeinser/CapacityGenes][img]https://i.imgur.com/kTkpTOE.png[/img][/url]
 [url=https://ko-fi.com/alite56114][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
 
-Surprise bonus human biology fun fact, other senses are actually enhanced as one becomes more impaired. For example, blind people tend to have better hearing. The brain accomplishes this by altering the functions of the unused parts in a process called neuroplasticity.
+Surprise bonus human biology fun fact, there is scientific evidence that other senses are actually enhanced as one becomes more impaired. For example, blind people tend to have better hearing based on MRI scans and various tests. The brain accomplishes this by altering the functions of the unused parts in a process called neuroplasticity.
   </description>
 </ModMetaData>
 
