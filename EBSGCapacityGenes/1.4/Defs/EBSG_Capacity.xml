@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>EBSG_Sensory</defName>
+        <label>senses</label>
+        <displayPriorityInXenotype>499.97</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="true" Name="EBSG_Talking">
+        <displayCategory>Miscellaneous</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Talking</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Abstract="true" Name="EBSG_Sight">
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Sight</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Abstract="true" Name="EBSG_Hearing">
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Hearing</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Talking">
+        <defName>EBSG_Mute</defName>
+        <label>mute</label>
+        <iconPath>EBSG/Gene_Mute</iconPath>
+        <description>Carriers of this gene are completely mute.</description>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Talking</capacity>
+                <setMax>0</setMax>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>Voice</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Talking">
+        <defName>EBSG_EloquentSpeaker</defName>
+        <label>eloquent speaker</label>
+        <iconPath>EBSG/Gene_EloquentSpeaker</iconPath>
+        <description>Carriers of this gene are have voices like smooth butter, seeming to draw people in even while they are explaining the dullest of topics.\n\nWhile 150% talking may seem like a massive impact, there are actually very few things that talking impacts throughout the game. This gene may create exceptional negotiators and traders, but outside of those two things the impacts of this gene will not be very noticable.</description>
+        <displayOrderInCategory>50.1</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Talking</capacity>
+                <postFactor>1.5</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_Blind</defName>
+        <label>blind</label>
+        <iconPath>EBSG/Gene_Blind</iconPath>
+        <description>Carriers of this gene are incapable of seeing due to the way their brain processes information.</description>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <biostatMet>4</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <setMax>0</setMax>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.2</postFactor>
+            </li>
+        </capMods>
+        <exclusionTags>
+            <li>ShootingAccuracy</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_TerribleVision</defName>
+        <label>terrible vision</label>
+        <iconPath>EBSG/Gene_TerribleVision</iconPath>
+        <description>Carriers of this gene are almost incapable of seeing due to the way their brain processes information.</description>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>0.25</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.15</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_BadVision</defName>
+        <label>bad vision</label>
+        <iconPath>EBSG/Gene_BadVision</iconPath>
+        <description>Carriers of this gene have a limited ability to see due to the way their brain processes information.</description>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>0.50</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.10</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_SubparVision</defName>
+        <label>subpar vision</label>
+        <iconPath>EBSG/Gene_BadVision</iconPath>
+        <description>Carriers of this gene have a somewhat limited ability to see due to the way their brain processes information.</description>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>0.75</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.05</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_EnhancedVision</defName>
+        <label>enhanced vision</label>
+        <iconPath>EBSG/Gene_EnhancedVision</iconPath>
+        <description>Carriers of this gene have a brain that is wired to see things a little better by utilizing some of the portions normally dedicated to hearing.</description>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.25</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>0.95</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_StrongVision</defName>
+        <label>strong vision</label>
+        <iconPath>EBSG/Gene_EnhancedVision</iconPath>
+        <description>Carriers of this gene have a brain that is wired to see things better by utilizing some of the portions normally dedicated to hearing.</description>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.50</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>0.90</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_GreatVision</defName>
+        <label>great vision</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have a brain that is wired to see things a lot better by utilizing some of the portions normally dedicated to hearing.</description>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.75</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>0.85</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Sight">
+        <defName>EBSG_AmazingVision</defName>
+        <label>amazing vision</label>
+        <iconPath>EBSG/Gene_AmazingVision</iconPath>
+        <description>Carriers of this gene have a brain that is wired to see things in exceptional detail by utilizing some of the portions normally dedicated to hearing.</description>
+        <displayOrderInCategory>8</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>2.00</postFactor>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>0.80</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hearing">
+        <defName>EBSG_BadHearing</defName>
+        <label>deaf</label>
+        <iconPath>EBSG/Gene_Deaf</iconPath>
+        <description>Carriers of this gene have a limited ability to hear due to the way their brain processes information.</description>
+        <displayOrderInCategory>13</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Hearing</capacity>
+                <setMax>0</setMax>
+            </li>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.10</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hearing">
+        <defName>EBSG_SubparHearing</defName>
+        <label>bad hearing</label>
+        <iconPath>EBSG/Gene_BadHearing</iconPath>
+        <description>Carriers of this gene have a limited ability to hear due to the way their brain processes information.</description>
+        <displayOrderInCategory>14</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>0.50</postFactor>
+            </li>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>1.05</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hearing">
+        <defName>EBSG_EnhancedHearing</defName>
+        <label>enhanced hearing</label>
+        <iconPath>EBSG/Gene_EnhancedHearing</iconPath>
+        <description>Carriers of this gene have a brain that is wired to hear things a little better by utilizing some of the portions normally dedicated to vision.</description>
+        <displayOrderInCategory>15</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.50</postFactor>
+            </li>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>0.95</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Hearing">
+        <defName>EBSG_StrongHearing</defName>
+        <label>strong hearing</label>
+        <iconPath>EBSG/Gene_AmazingHearing</iconPath>
+        <description>Carriers of this gene have a brain that is wired to hear things better by utilizing some of the portions normally dedicated to vision.</description>
+        <displayOrderInCategory>16</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <capMods>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>2.00</postFactor>
+            </li>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>0.90</postFactor>
+            </li>
+        </capMods>
+    </GeneDef>
+</Defs>
