@@ -40,9 +40,11 @@
                 <setMax>0</setMax>
             </li>
         </capMods>
-        <exclusionTags>
-            <li>Voice</li>
-        </exclusionTags>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>muted</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_Talking">
@@ -58,6 +60,11 @@
                 <postFactor>1.5</postFactor>
             </li>
         </capMods>
+        <symbolPack>
+            <suffixSymbols>
+                <li><symbol>speaker</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_Sight">
