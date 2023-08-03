@@ -27,6 +27,13 @@
         </exclusionTags>
     </GeneDef>
 
+    <GeneDef Abstract="true" Name="EBSG_Smelling">
+        <displayCategory>EBSG_Sensory</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Smelling</li>
+        </exclusionTags>
+    </GeneDef>
+
     <GeneDef ParentName="EBSG_Talking">
         <defName>EBSG_Mute</defName>
         <label>mute</label>
@@ -296,5 +303,54 @@
                 <postFactor>0.90</postFactor>
             </li>
         </capMods>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Smelling">
+        <defName>EBSG_NoSmell</defName>
+        <label>anosmia</label>
+        <iconPath>EBSG/Gene_NoSmell</iconPath>
+        <description>Carriers of this gene have congenital anosmia, or an inability to smell since birth. This makes it more difficult to do things that often expect a keen sense of smell, like cooking.\n\nUsing a gastro-analyzer can help alleviate this issue some, though it will not perfectly mitigate the issue,\n\nUnlike other senses, a loss of smell usually does not cause notable increases in other sensory capabilities.</description>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <CookSpeed>0.8</CookSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Smelling">
+        <defName>EBSG_HalfSmell</defName>
+        <label>hyposmia</label>
+        <iconPath>EBSG/Gene_HalfSmell</iconPath>
+        <description>Carriers of this gene have congenital hyposmia, or diminished ability to smell since birth. This makes it more difficult to do things that often expect a keen sense of smell, like cooking.\n\nUsing a gastro-analyzer can help alleviate this issue some, though it will not perfectly mitigate the issue,\n\nUnlike other senses, a loss of smell usually does not cause notable increases in other sensory capabilities.</description>
+        <displayOrderInCategory>21</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <CookSpeed>0.9</CookSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Smelling">
+        <defName>EBSG_GoodSmell</defName>
+        <label>good olfactory receptors</label>
+        <iconPath>EBSG/Gene_GoodSmell</iconPath>
+        <description>Carriers of this gene have enhanced olfactory receptors which allow them to easily identify smells. This makes it easier to do certain things like cooking.\n\nUnlike other senses, a loss of smell usually does not cause notable increases in other sensory capabilities.</description>
+        <displayOrderInCategory>22</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <CookSpeed>1.1</CookSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Smelling">
+        <defName>EBSG_GreatSmell</defName>
+        <label>great olfactory receptors</label>
+        <iconPath>EBSG/Gene_GreatSmell</iconPath>
+        <description>Carriers of this gene have greatly enhanced olfactory receptors which allow them to easily identify smells. This makes it easier to do certain things like cooking. This enhancement is so great that they can even figure out people's moods to an extent, making it slightly easier for them to create positive interactions with other colonists.\n\nUnlike other senses, a loss of smell usually does not cause notable increases in other sensory capabilities.</description>
+        <displayOrderInCategory>23</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <CookSpeed>1.2</CookSpeed>
+            <SocialImpact>1.1</SocialImpact>
+        </statFactors>
     </GeneDef>
 </Defs>
