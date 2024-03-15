@@ -5,6 +5,7 @@
   <packageId>EBSG.Sensory</packageId>
   <supportedVersions>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   
   <modDependencies>
@@ -50,4 +51,3 @@ This mod will eventually be put into Expanded Biotech Style Genes - All in One. 
 Surprise bonus human biology fun fact, there is scientific evidence that other senses are actually enhanced as one becomes more impaired. For example, blind people tend to have better hearing based on MRI scans and various tests. The brain accomplishes this by altering the functions of the unused parts in a process called neuroplasticity.
   </description>
 </ModMetaData>
-
